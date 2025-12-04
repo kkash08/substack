@@ -7,6 +7,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
+connectDB();
 
 app.get("/", (req, res) => {
     res.send("Substack backend API running!");
